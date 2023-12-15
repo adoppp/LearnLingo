@@ -1,0 +1,59 @@
+@import '../../../scss/variables';
+@import '../../../scss/colors';
+@import '../../../scss/mixins';
+
+.header {
+    &__container {
+        @include container();
+
+        padding: 16px 32px;
+
+        align-items: center;
+        justify-content: space-between;
+
+        @media screen and (min-width: 768px) {
+            padding: 20px 64px;
+        }
+    }
+
+    &__navigation {
+        & ul {
+            display: flex;
+            gap: 28px;
+        }
+    }
+
+    &__auth {
+        display: flex;
+        
+        & a {
+            background-color: $main-black;
+            
+            color: $main-white;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.5;
+
+            text-align: center;
+
+            display: block;
+
+            min-width: 160px;
+            max-width: fit-content;
+
+            padding: 14px;
+
+            border-radius: $main-border-radius;
+
+            @include transition();
+
+            &:hover {
+                background-color: $alone-gray;
+            }
+
+            &:active {
+                background-color: $high-gray;
+            }
+        }
+    }
+}

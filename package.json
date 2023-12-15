@@ -1,5 +1,5 @@
 {
-  "name": "react_vite",
+  "name": "learn_lingo",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -13,8 +13,10 @@
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
+    "@types/classnames": "^2.3.1",
     "@types/node-sass": "^4.11.7",
     "@vitejs/plugin-react-swc": "^3.3.2",
+    "classnames": "^2.3.2",
     "modern-normalize": "^2.0.0",
     "normalize-scss": "^8.0.0",
     "normalize.css": "^8.0.1",

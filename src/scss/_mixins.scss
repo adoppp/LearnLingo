@@ -1,3 +1,15 @@
-* {
-    
+@mixin transition() {
+    transition-property: all;
+    transition-duration: 230ms;
+    transition-timing-function: cubic-bezier(0.755, 0.465, 0.435, 0.650);
+}
+
+@mixin container() {
+    display: flex;
+
+    max-width: 1312px;
+
+    margin: 0 auto;
+
+    padding: 0 16px;
 }

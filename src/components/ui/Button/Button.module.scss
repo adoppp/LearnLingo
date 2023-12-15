@@ -1,0 +1,62 @@
+@import '../../../scss/variables';
+@import '../../../scss/colors';
+@import '../../../scss/mixins';
+
+.button {
+    background-color: $accent-green;
+
+    color: $main-black;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.5;
+
+    min-width: 260px;
+
+    padding: 16px;
+
+    border-radius: $main-border-radius;
+
+    @include transition();
+
+    &:hover {
+        background-color: $alpha-green;
+    }
+
+    &:active {
+        background-color: $active-green;
+    }
+}
+
+.gray {
+    background-color: $main-black;
+
+    color: $main-white;
+
+    &:hover {
+        background-color: $alone-gray;
+    }
+
+    &:active {
+        background-color: $high-gray;
+    }
+}
+
+.dark {
+    background-color: $main-white;
+
+    border: 1px solid $main-black;
+
+    &:hover {
+        background-color: $alone-gray;
+
+        border: 1px solid transparent;
+    }
+
+    &:active {
+        background-color: $high-gray;
+
+        color: $main-white;
+
+        border: 1px solid transparent;
+    }
+}
